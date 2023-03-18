@@ -35,4 +35,11 @@ public class UserRegistration {
         else
             System.out.println("Invalid Mobile No");
     }
+    public void validatePassword(String password) {
+        boolean result = Pattern.compile("^[a-zA-Z]{8,}$").matcher(password).matches();
+        if (result == true)
+            System.out.println("Valid Password");
+        else
+            System.out.println("Invalid Password");
+    }
 }
