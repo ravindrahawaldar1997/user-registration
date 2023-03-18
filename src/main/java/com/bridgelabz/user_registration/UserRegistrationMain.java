@@ -9,5 +9,6 @@ public class UserRegistrationMain {
         userRegistration.validateMobileNo("91 7795234718");
         userRegistration.validatePassword("ravinDdrasdcs");
         userRegistration.validatePasswordOneUpperCase("RavindraAZDFgjhj");
+        userRegistration.validatePasswordOneNumeric("rahgvHGF12321wsadf");
     }
 }
