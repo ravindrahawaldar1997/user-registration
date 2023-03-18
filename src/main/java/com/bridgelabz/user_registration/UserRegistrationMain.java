@@ -10,5 +10,6 @@ public class UserRegistrationMain {
         userRegistration.validatePassword("ravinDdrasdcs");
         userRegistration.validatePasswordOneUpperCase("RavindraAZDFgjhj");
         userRegistration.validatePasswordOneNumeric("rahgvHGF12321wsadf");
+        userRegistration.validatePasswordOneSpecialChar("FDhgsavch13@");
     }
 }

@@ -56,4 +56,11 @@ public class UserRegistration {
         else
             System.out.println("Invalid Password");
     }
+    public void validatePasswordOneSpecialChar(String password) {
+        boolean result = Pattern.compile("^(?=.+[a-z])(?=.+[A-Z])(?=.+[0-9])(?=.+[-+_!@#$%^&*., ?]).+${8,}").matcher(password).matches();
+        if (result == true)
+            System.out.println("Valid Password");
+        else
+            System.out.println("Invalid Password");
+    }
 }
