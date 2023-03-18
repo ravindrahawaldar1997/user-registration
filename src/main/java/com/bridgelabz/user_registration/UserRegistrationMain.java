@@ -6,5 +6,6 @@ public class UserRegistrationMain {
         userRegistration.validateFirstName("Ravi");
         userRegistration.validateLastName("Hawaldar");
         userRegistration.validateEmail("ravi@gmail.com");
+        userRegistration.validateMobileNo("91 7795234718");
     }
 }

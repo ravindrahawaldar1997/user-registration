@@ -21,7 +21,18 @@ public class UserRegistration {
             System.out.println("Invalid first name");
     }
     public void validateEmail(String email) {
-        boolean result = Pattern.compile("[a-z]+([_.-]?[a-zA-Z0-9])*[@][a-zA-Z0-9]+([.][a-z]{2,3}){1,2}$").matcher(email).matches();
-        System.out.println(result);
+        boolean result = Pattern.compile("^[a-z]+([_.-]?[a-zA-Z0-9])*[@][a-zA-Z0-9]+([.][a-z]{2,3}){1,2}$").matcher(email).matches();
+        if (result == true)
+            System.out.println("Valid Email");
+        else
+            System.out.println("Invalid Email");
+    }
+
+    public void validateMobileNo(String mobileNo) {
+        boolean result = Pattern.compile("^(91)[\\s][0-9]{10}$").matcher(mobileNo).matches();
+        if (result == true)
+            System.out.println("Valid Mobile No");
+        else
+            System.out.println("Invalid Mobile No");
     }
 }
