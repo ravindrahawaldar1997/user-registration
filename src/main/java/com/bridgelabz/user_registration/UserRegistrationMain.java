@@ -8,5 +8,6 @@ public class UserRegistrationMain {
         userRegistration.validateEmail("ravi@gmail.com");
         userRegistration.validateMobileNo("91 7795234718");
         userRegistration.validatePassword("ravinDdrasdcs");
+        userRegistration.validatePasswordOneUpperCase("RavindraAZDFgjhj");
     }
 }
