@@ -5,5 +5,6 @@ public class UserRegistrationMain {
         UserRegistration userRegistration = new UserRegistration();
         userRegistration.validateFirstName("Ravi");
         userRegistration.validateLastName("Hawaldar");
+        userRegistration.validateEmail("ravi@gmail.com");
     }
 }

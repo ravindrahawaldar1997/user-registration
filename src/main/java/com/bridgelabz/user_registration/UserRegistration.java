@@ -20,4 +20,8 @@ public class UserRegistration {
         else
             System.out.println("Invalid first name");
     }
+    public void validateEmail(String email) {
+        boolean result = Pattern.compile("[a-z]+([_.-]?[a-zA-Z0-9])*[@][a-zA-Z0-9]+([.][a-z]{2,3}){1,2}$").matcher(email).matches();
+        System.out.println(result);
+    }
 }
